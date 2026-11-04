@@ -1,0 +1,98 @@
+/* Minetra-inspired GMS Solutions theme */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700;800&display=swap');
+:root{
+ --navy:#151515;--blue:#282828;--copper:#DA932B;--gold:#B77C24;
+ --ink:#151515;--muted:#66615b;--paper:#f3f1ed;--line:#dedbd5;
+ --white:#fff;--shadow:0 18px 50px rgba(21,21,21,.12);
+ --accent:#DA932B;
+}
+html{scroll-padding-top:96px}
+body{font-family:'Inter Tight',sans-serif;color:#3E3C3D;background:#fff;font-size:16px;line-height:1.65}
+h1,h2,h3,h4,h5,h6,.brand,.footer-brand{font-family:'Bebas Neue',sans-serif;font-weight:500;letter-spacing:.015em;color:#151515}
+h1{font-size:clamp(48px,6.4vw,82px);line-height:.98;letter-spacing:.005em}
+h2{font-size:clamp(38px,4.5vw,58px);line-height:1.02}
+h3{font-size:30px;line-height:1.08}
+p{color:#66615b}
+.container{width:min(1200px,calc(100% - 48px))}
+.eyebrow{font-family:'Bebas Neue',sans-serif;color:#DA932B;font-size:17px;letter-spacing:.12em;font-weight:600}
+header{height:94px;background:linear-gradient(127deg,#1a1a1a 65%,#DA932B 100%);box-shadow:0 5px 24px #0002}
+header.scrolled{height:78px;background:linear-gradient(127deg,#151515 65%,#DA932B 100%)}
+.brand{font-size:27px;color:#fff;letter-spacing:.03em;display:flex}
+.brand small{font:600 10px 'Inter Tight',sans-serif;letter-spacing:.2em;color:#DA932B}
+.brand img{background:#fff;border-radius:50%;padding:4px}
+.links{gap:21px;color:#f5f5f5;font-family:'Inter Tight',sans-serif;font-size:13px}
+.links a{transition:color .2s}
+.links a:hover,.links a[aria-current="page"]{color:#DA932B}
+.nav-cta{background:#DA932B;color:#151515;padding:13px 20px;font-family:'Inter Tight',sans-serif;font-weight:800;letter-spacing:.04em}
+.menu{color:#fff}
+.btn{background:#DA932B;border-color:#DA932B;color:#151515;font-family:'Inter Tight',sans-serif;font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:16px 24px}
+.btn:hover{background:#B77C24;border-color:#B77C24;color:#fff}
+.btn.outline{background:transparent;border-color:#ffffff9c;color:#fff}
+.btn.navy{background:#151515;border-color:#151515;color:#fff}
+.btn.navy:hover{background:#DA932B;border-color:#DA932B;color:#151515}
+.hero{min-height:780px;background-image:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.48) 62%,rgba(0,0,0,.2)),url('images/mangampeta-mine.jpg');background-position:center;background-size:cover}
+.hero h1{color:#fff;text-transform:uppercase}
+.hero p{font-size:18px;color:#eee;max-width:650px}
+.hero .eyebrow{color:#DA932B}
+.hero-note{font-family:'Inter Tight',sans-serif;color:#f2eee8}
+.section{padding:105px 0}
+.section-head h2,.intro-copy h2,.page-intro h1{color:#151515;text-transform:uppercase}
+.section-head p,.intro-copy p,.page-intro p{font-size:17px}
+.soft,.page-intro{background:#f3f1ed}
+.intro-image img{filter:saturate(.82);box-shadow:18px 18px 0 #DA932B}
+.image-tag{background:#151515;border-bottom:4px solid #DA932B;font-family:'Bebas Neue',sans-serif;font-size:25px;letter-spacing:.03em}
+.cards{gap:22px}
+.card{border:0;background:#f3f1ed;padding:32px;min-height:225px;border-bottom:3px solid transparent}
+.card:hover{border-bottom-color:#DA932B;box-shadow:var(--shadow);transform:translateY(-6px)}
+.card .num{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#DA932B}
+.card h3{font-size:27px;text-transform:uppercase}
+.card p{font-size:15px}
+.card a{color:#B77C24;text-transform:uppercase;letter-spacing:.06em}
+.why-grid{border-color:#d9d5ce}
+.why{border-color:#d9d5ce}
+.why b{font-family:'Bebas Neue',sans-serif;font-size:24px;text-transform:uppercase}
+.process .step{border-color:#DA932B}
+.step:before{font-family:'Bebas Neue',sans-serif;color:#DA932B;font-size:32px}
+.step h3{text-transform:uppercase;font-size:20px}
+.project{background:#151515}
+.project img{filter:saturate(.78)}
+.project span{font-family:'Bebas Neue',sans-serif;font-size:23px;letter-spacing:.03em;text-transform:uppercase}
+.band{background:#151515;border-top:4px solid #DA932B}
+.band h2{color:#fff;text-transform:uppercase}
+.band p{color:#d5d1ca}
+.page-intro{padding:170px 0 86px;position:relative;overflow:hidden}
+.page-intro:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #DA932B55;right:7%;top:24%;transform:rotate(45deg);pointer-events:none}
+.page-intro .eyebrow{color:#B77C24}
+.page-intro h1{max-width:900px}
+.panel{background:#f3f1ed;border-left:4px solid #DA932B}
+.pill{border-color:#d8d2c8;background:#fff;color:#3E3C3D}
+.service-item{border:0;background:#f3f1ed;border-bottom:3px solid #DA932B}
+.service-item h3{font-size:27px;text-transform:uppercase}
+.report{border:0;background:#f3f1ed}
+.report-icon{background:#151515;color:#DA932B}
+.report h3{font-size:23px;text-transform:uppercase}
+.contact-line b{font-family:'Bebas Neue',sans-serif;font-size:21px;letter-spacing:.04em}
+.form input,.form select,.form textarea{border:1px solid #d7d2ca;background:#f9f8f6;border-radius:0}
+.form input:focus,.form select:focus,.form textarea:focus{outline:1px solid #DA932B;border-color:#DA932B}
+.map{filter:grayscale(100%) contrast(1.05)}
+footer{background:#151515;border-top:4px solid #DA932B}
+.footer-brand{font-size:30px;color:#fff}
+.footer-brand small{font:600 10px 'Inter Tight',sans-serif;color:#DA932B}
+.footer-grid h4{font-size:22px;text-transform:uppercase;color:#fff}
+.footer-grid a:hover{color:#DA932B}
+.footer-bottom{border-color:#ffffff24}
+.lightbox{background:#080808f2}
+@media(max-width:900px){
+ .links{gap:12px}.links a{font-size:12px}
+}
+@media(max-width:700px){
+ header{height:76px}.brand{font-size:23px}.brand img{width:44px;height:44px}
+ .links{top:76px;background:#151515;padding:22px 24px 28px}
+ .links a{font-size:15px;color:#fff}
+ .hero{min-height:700px;padding-top:140px}
+ .hero h1{font-size:49px}
+ .section{padding:76px 0}
+ .page-intro{padding:135px 0 65px}
+ .page-intro:after{right:-130px;top:12%}
+}
+@media(max-width:430px){.hero h1{font-size:43px}.container{width:min(100% - 36px,1200px)}}
